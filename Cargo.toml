@@ -1,0 +1,33 @@
+[package]
+name = "meteora-pools-sdk"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust SDK for Meteora Pools program"
+documentation = "https://docs.rs/meteora-pools-sdk/latest/meteora_pools_sdk/"
+homepage = "https://www.meteora.ag/"
+repository = "https://github.com/regolith-labs/meteora-pools-sdk"
+readme = "./README.md"
+authors = ["Hardhat Chad"]
+keywords = ["solana"]
+
+[lib]
+name = "meteora_pools_sdk"
+path = "src/lib.rs"
+
+[features]
+serde = ["dep:serde", "serde-big-array", "serde_with"]
+fetch = []
+anchor = ["anchor-lang"]
+anchor-idl-build = ["anchor-lang"]
+
+[dependencies]
+anchor-lang = { version = "0.30", optional = true }
+borsh = "0.10.3"
+num-derive = "0.4.2"
+num-traits = "0.2.19"
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde-big-array = { version = "0.5", optional = true }
+serde_with = { version = "3.12", optional = true }
+solana-program = "1.18"
+thiserror = "2.0.11"
