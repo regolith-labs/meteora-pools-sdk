@@ -1,6 +1,6 @@
-# Kamino Liquidity SDK
+# Meteora Pools SDK
 
-This is a Rust client for the [Meteora Pools](https://github.com/mercurial-finance/mercurial-dynamic-amm-sdk/tree/master) program, generated using [Codama](https://github.com/codama-idl/codama).
+This is a Rust client for the [Meteora Pools](https://github.com/mercurial-finance/mercurial-dynamic-amm-sdk) program, generated using [Codama](https://github.com/codama-idl/codama).
 
 
 ## Notes
